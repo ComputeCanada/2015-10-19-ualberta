@@ -4,7 +4,7 @@
 
 zodiacText = open('zodiacDescriptions.txt')
 #for line in zodiacText:
-#    print line
+#    print(line)
 
 #Load into a list
 zodiacList = []
@@ -16,14 +16,14 @@ print zodiacList
 #Ask user for input (year)
 birthYear = 1985
 
-#Take year and use as a conditional (later we'll just access the dictionary directly)
+#Take year and figure out the index
 
 listIndex = (birthYear - 4) % 12
-print listIndex
+print(listIndex)
 
 #Return character
-print "You are a ",
-print zodiacList[listIndex]
+print("You are a ", end="")
+print(zodiacList[listIndex])
 
 #Repeat
 

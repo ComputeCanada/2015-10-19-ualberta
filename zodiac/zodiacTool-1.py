@@ -3,13 +3,13 @@
 #Open the zodiac file
 
 
-#Load into a dictionary
+#Load the file
 
 
 #Ask user for input (year)
 
 
-#Take year and use as a conditional (later we'll just access the dictionary directly)
+#Take year and figure out the index
 
 
 #Return horoscope

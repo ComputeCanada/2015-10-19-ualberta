@@ -4,7 +4,7 @@
 
 zodiacText = open('zodiacDescriptions.txt')
 #for line in zodiacText:
-#    print line
+#    print(line)
 
 #Load into a list
 zodiacList = []
@@ -19,8 +19,8 @@ listIndex = (birthYear - 4) % 12
 print listIndex
 
 #Return character
-print "You are a ",
-print zodiacList[listIndex]
+print("You are a ", end="")
+print(zodiacList[listIndex])
 
 #Repeat
 

@@ -4,14 +4,14 @@
 
 zodiacText = open('zodiacDescriptions.txt')
 #for line in zodiacText:
-#    print line
+#    print(line)
 
 #Load into a list
 zodiacList = []
 for line in zodiacText:
     zodiacList.append(line)
 
-print zodiacList
+print(zodiacList)
 
 #Ask user for input (year)
 try:
@@ -20,11 +20,11 @@ try:
     print listIndex
     
     #Return character
-    print "You are a ",
-    print zodiacList[listIndex]
+    print("You are a ", end="")
+    print(zodiacList[listIndex])
     
 except ValueError:
-    print "You did not enter a number"
+    print("You did not enter a number")
 
 #Repeat
 

@@ -4,19 +4,19 @@
 
 zodiacText = open('zodiacDescriptions.txt')
 #for line in zodiacText:
-#    print line
+#    print(line)
 
 #Load into a list
 zodiacList = []
 for line in zodiacText:
     zodiacList.append(line)
 
-print zodiacList
+print(zodiacList)
 
 #Ask user for input (year)
 
 
-#Take year and use as a conditional (later we'll just access the dictionary directly)
+#Take year and figure out the index
 
 
 #Return character

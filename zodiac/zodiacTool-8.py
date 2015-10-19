@@ -5,7 +5,7 @@
 def ZodiacSetup():
     zodiacText = open('zodiacDescriptions2.txt')
     #for line in zodiacText:
-    #    print line
+    #    print(line)
     
     #Load into a list
     zodiacList = []
@@ -20,16 +20,16 @@ def ZodiacFigure():
     #Ask user for input (year)
     try:
         birthYear=int(raw_input('What year were you born: '))
-        #Take year and use as a conditional (later we'll just access the dictionary directly)
+        #Take year and use as a conditional
         listIndex = (birthYear - 4) % 12
-        print listIndex
+        print(listIndex)
         
         #Return character
-        print "You are a ",
-        print zodiacList[listIndex]
+        print("You are a ", end="")
+        print(zodiacList[listIndex])
         
     except ValueError:
-        print "You did not enter an integer"
+        print("You did not enter an integer")
         birthYear = "Stop"
         
     return birthYear
@@ -40,7 +40,7 @@ zodiacList = ZodiacSetup()
 birthYear=0
 while type(birthYear) is int:
     birthYear = ZodiacFigure()
-    #print type(birthYear)
+    #print(type(birthYear))
 
 #Below is a description of the task
 
