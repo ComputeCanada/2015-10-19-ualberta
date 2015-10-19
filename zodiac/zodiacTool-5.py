@@ -22,8 +22,7 @@ listIndex = (birthYear - 4) % 12
 print(listIndex)
 
 #Return character
-print("You are a ", end="")
-print(zodiacList[listIndex])
+print("You are a ", zodiacList[listIndex])
 
 #Repeat
 

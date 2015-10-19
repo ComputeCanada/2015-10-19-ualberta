@@ -15,13 +15,12 @@ print(zodiacList)
 
 #Ask user for input (year)
 try:
-    birthYear=int(raw_input('What year were you born: '))
+    birthYear=int(input('What year were you born: '))
     listIndex = (birthYear - 4) % 12
     print listIndex
     
     #Return character
-    print("You are a ", end="")
-    print(zodiacList[listIndex])
+    print("You are a ", zodiacList[listIndex])
     
 except ValueError:
     print("You did not enter a number")

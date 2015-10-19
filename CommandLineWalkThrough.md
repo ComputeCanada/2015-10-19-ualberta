@@ -400,3 +400,17 @@ Point out that there is *still* some additional text that could be culled (just 
 >**Challenge:** Write a script that would do this for you again and again?
 
 >**Answer:** What you are really being asked to do at this point is write a program and while we could use BASH to do this what we're going to do instead is leave BASH behind and move to Python because it is easier.
+
+## One last thing
+
+Before we move to Python you'll find it useful to save a list of all the commands that we used so far.  You can do this by navigating to a directory where you would like to save them and then running the *history* command with a redirect to a file.
+
+	$ history > history_file.txt
+
+Two other things to note about the history command:
+
+1. it can be combined with **grep** to find commands you have forgotten.
+
+	$ history | grep cat
+
+2. it is the history file that you are scrolling through when you press the up arrow.

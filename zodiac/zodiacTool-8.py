@@ -19,14 +19,14 @@ def ZodiacSetup():
 def ZodiacFigure():
     #Ask user for input (year)
     try:
-        birthYear=int(raw_input('What year were you born: '))
+        birthYear=int(input('What year were you born: '))
         #Take year and use as a conditional
         listIndex = (birthYear - 4) % 12
         print(listIndex)
         
         #Return character
-        print("You are a ", end="")
-        print(zodiacList[listIndex])
+        print("You are a ", zodiacList[listIndex])
+        return birthYear
         
     except ValueError:
         print("You did not enter an integer")
